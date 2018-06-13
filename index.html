@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, minimum-scale=0.1">
     <title>Erin McBride | Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -31,14 +30,19 @@
     </div> <!--  division for navigation bar section -->
 
     <div class="about-section" id="about">
-      <h1>About me</h1>
+      <div class="title">
+        <h1>About me</h1>
+      </div>
         <p>Welcome to my portfolio website! I built this entire website from scratch using my self taught knowledge of HTML, CSS, and JavaScript.</p>
         <p>Last summer, my girlfriend and I started a blog about movies. When we were having trouble getting traffic to our site, we discovered the website builder we used was terrible for SEO. So we decided to build our own website from scratch. I took online tutorials, but quickly learned that I needed more if I was going to succeed in teaching myself how to code. Then I found Team Treehouse.</p>
         <p>Since then, I have been studying HTML, CSS, and JavaScript through their online classes. I started out as a regular subscriber, but in January of 2018, I decided to enroll in the Front End Web Development Techdegree program. Below are examples of the projects I have been building. Click on the images to view the full site, and more projects are on the way!</p>
     </div> <!--  division for about section -->
 
     <!-- Portfolio -->
-    <div class="row" id="my-work">
+    <div class="my-work-title" id="my-work">
+      <h1>Hand-Coded Projects</h1>
+    </div>
+    <div class="row">
       <div class="column">
         <div class="content">
           <a href="https://rmcbride2121.github.io/responsive_layout/" target="_blank"><img src="img/responsive-layout-pic.jpg" alt="my work"  style="width:100%" class="images"></a>
@@ -67,7 +71,28 @@
           <p>Sass is an important tool in a modern Front End Web Developer’s toolbox. It's used by many developers to make styling web pages with CSS easier and faster. I created this style guide using BEM style classes to quickly prototype and apply a consistent look across multiple pages of a site.</p>
         </div>
       </div>
+      <div class="column">
+        <div class="content">
+          <a href="https://rmcbride2121.github.io/video_player/" target="_blank"><img src="img/video-player-pic.jpg" alt="my work" style="width:100%" class="images"></a>
+          <h3>Video Player</h3>
+          <p>I built an HTML5 video player using JavaScript and the HTML5 Video API. Video, and the interface used to control the video, is increasingly important for many different kinds of web applications, including web site landing pages, blogs, podcasts, product marketing and training.</p>
+        </div>
+      </div>
     </div> <!--  division projects section -->
+
+    <div class="my-work-title">
+      <h1>Professional Work</h1>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <a href="https://dellmed.utexas.edu/" target="_blank"><img src="img/dell-med-pic.jpg" alt="my work"  style="width:100%" class="images"></a>
+          <h3>Dell Medical School Website 3.0</h3>
+          <p>I was brought on by the University of Texas to assist with the creation and testing of the new Dell Med website. Over the course of five weeks, I created over 1200 bio pages for all faculty and staff. I also helped test the site for errors. Checkout the directory section to see my work!</p>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container-fluid skills-section" id="skills">
         <h1>Skills</h1>
