@@ -18,3 +18,44 @@ window.onclick = function(event) {
     }
   }
 }
+
+// JQuery fade in
+function main(){
+  $('.hero-text').hide()
+  $('.hero-text').fadeIn(2000)
+};
+
+// "See More" click event
+$(".btn").click(function(){
+  $('html, body').animate({
+      scrollTop: $("#about").offset().top
+  }, 1000);
+});
+
+// Menu button click events
+$(".about-btn").click(function(){
+  $('html, body').animate({
+      scrollTop: $("#about").offset().top
+  }, 1000);
+});
+
+$(".work-btn").click(function(){
+  $('html, body').animate({
+      scrollTop: $("#my-work").offset().top
+  }, 1000);
+});
+
+$(".skills-btn").click(function(){
+  $('html, body').animate({
+      scrollTop: $("#skills").offset().top
+  }, 1000);
+});
+
+$(".contact-btn").click(function(){
+  $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+  }, 1000);
+});
+
+
+$(document).ready(main);
