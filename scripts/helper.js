@@ -28,7 +28,7 @@ function main(){
 // "See More" click event
 $(".btn").click(function(){
   $('html, body').animate({
-      scrollTop: $("#about").offset().top
+      scrollTop: $("#my-work").offset().top
   }, 1000);
 });
 

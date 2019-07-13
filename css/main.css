@@ -5,12 +5,13 @@ body, html {
   height: 100%;
   margin: 0 auto;
   background-color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Header */
 
 .hero-image {
-  background-image: url("../images/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
+  background-image: url("../images/daniil-silantev-F6Da4r2x5to-unsplash.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +28,7 @@ body, html {
   color: white;
 }
 
- .hero-image .btn {
+.hero-image .btn {
    position: absolute;
    bottom: 0;
    left: 50%;
@@ -44,7 +45,8 @@ body, html {
 }
 
 .btn:hover {
-    background-color: #555;
+    color: black;
+    background-color: white;
 }
 
 /* Navigation Bar */
@@ -52,14 +54,13 @@ body, html {
 .dropbtn {
     background-color: Transparent;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 16px 20px;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: none;
+    color: black;
+    background-color: white;
 }
 
 .dropdown {
@@ -99,11 +100,6 @@ body, html {
 
 /* About */
 
-.title {
-  margin-bottom: 30px;
-}
-
-.about-section,
 .my-work-title {
   margin: 50px;
 }
@@ -135,7 +131,7 @@ h3 {
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 25%;
+    width: 25%; 
 }
 
 /* Clear floats after rows */
@@ -148,7 +144,8 @@ h3 {
 /* Content */
 .content {
     background-color: white;
-    padding: 10px;
+    padding: 1rem 2rem;
+    min-height: 500px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -167,34 +164,6 @@ h3 {
 
 /* Skills */
 
-.skills-section {
-  background-color: white;
-  padding-right: 50px;
-  padding-left: 80px;
-  padding-bottom: 20px;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.img-responsive {
-  border-radius: 50%;
-}
-
-.skills {
-  margin: auto;
-  transition: all .5s ease-in-out;
-}
-
-.skills-2 {
-  margin: 5px;
-  transition: all .5s ease-in-out;
-}
-
-.skills:hover,
-.skills-2:hover {
-  transform: scale(1.5);
-}
 
 /* Contact */
 
@@ -215,7 +184,7 @@ h3 {
 .link {
   padding-left: 10px;
   padding-right: 10px;
-  color: black;
+  color: white;
   transition: all .5s ease-in-out;
 }
 
