@@ -122,16 +122,17 @@ h1, h2, h3 {
 /* Portfolio */
 
 .row {
-    margin: 2rem 1rem;
-    margin-bottom: 10rem;
+    margin: 2rem 5rem;
+    margin-bottom: 20rem;
     display: grid;
-    grid-gap: 1%;
+    grid-gap: 2%;
 }
 
 @media only screen and (min-width: 750px) {
   .row {
     grid-template-columns: 1fr 1fr;
-    
+    margin: 2rem 1rem;
+    margin-bottom: 10rem;
   }
 }
 
