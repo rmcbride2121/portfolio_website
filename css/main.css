@@ -4,8 +4,13 @@ body, html {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: #F5F5F5;
+  background-color: #56CBF9;
   font-family: 'Poppins', sans-serif;
+}
+
+/* Titles */
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Header */
@@ -45,8 +50,7 @@ body, html {
 }
 
 .btn:hover {
-    color: black;
-    background-color: white;
+    color: whitesmoke;
 }
 
 /* Navigation Bar */
@@ -102,64 +106,31 @@ body, html {
 
 .my-work-title {
   margin: 50px;
+  text-align: center;
+  padding-top: 2rem;
+  color: white;
 }
 
 /* Portfolio */
 
-h3 {
-  padding-top: 15px;
-}
-
-.images {
-  transition: all .5s ease-in-out;
-}
-
-.images:hover {
-  transform: scale(1.1);
-}
-
 .row {
-    margin: 8px 10px;
+    margin: 2rem 1rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-gap: 1%;
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
+@media only screen and (min-width: 750px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+    
+  }
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%; 
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: white;
-    padding: 1rem 2rem;
-    min-height: 500px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1400px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+@media only screen and (min-width: 1020px) {
+  .row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* Skills */
@@ -174,11 +145,14 @@ h3 {
 /* Footer */
 
 .page-footer {
-  left: 0;
-  bottom: 0;
   width: 100%;
+  height: 100%;
+  max-height: fit-content;
   text-align: center;
-  margin: auto;
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #666666;
+  color: white;
 }
 
 .link {
