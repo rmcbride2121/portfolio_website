@@ -33,6 +33,14 @@ h1, h2, h3 {
   color: white;
 }
 
+.hero-text h1 {
+  font-size: 4rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
 .hero-image .btn {
    position: absolute;
    bottom: 0;
