@@ -58,7 +58,7 @@ h1, h2, h3 {
 }
 
 .btn:hover {
-    color: whitesmoke;
+    color: #58A4B0;
 }
 
 /* Navigation Bar */
@@ -110,7 +110,9 @@ h1, h2, h3 {
   display: block;
 }
 
-/* About */
+
+
+/* Portfolio */
 
 .my-work-title {
   margin: 50px;
@@ -118,8 +120,6 @@ h1, h2, h3 {
   padding-top: 2rem;
   color: white;
 }
-
-/* Portfolio */
 
 .row {
     margin: 2rem 5rem;
@@ -142,15 +142,6 @@ h1, h2, h3 {
   }
 }
 
-/* Skills */
-
-
-/* Contact */
-
-.contact {
-  text-align: center;
-}
-
 /* Footer */
 
 .page-footer {
@@ -168,13 +159,13 @@ h1, h2, h3 {
   padding-left: 10px;
   padding-right: 10px;
   color: white;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .link:hover {
-  transform: scale(1.5);
+  color: #58A4B0;
 }
 
 .copyright {
-  padding-top: 5px;
+  padding-top: 1rem;
 }
