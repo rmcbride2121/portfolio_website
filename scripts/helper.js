@@ -1,3 +1,18 @@
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 210) {
+	    $(".navbar").css("background" , "#666666");
+	  } else if (scroll < 210) {
+      $(".navbar").css("background" , "none");
+    }
+
+	  // else{
+		//   $(".navbar").css("background" , "#333");  	
+	  // }
+  })
+})
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {

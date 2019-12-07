@@ -8,6 +8,14 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: #58A4B0;
+}
+
 /* Titles */
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
@@ -63,6 +71,14 @@ h1, h2, h3 {
 
 /* Navigation Bar */
 
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav li {
+  padding-left: 2rem;
+}
+
 .dropbtn {
     background-color: Transparent;
     color: white;
@@ -106,6 +122,20 @@ h1, h2, h3 {
 
 .show {
   display: block;
+}
+
+/* Media Queries for Navigation Bar */
+
+@media only screen and (min-width: 750px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar {
+    display: none;
+  }
 }
 
 /* Portfolio */
