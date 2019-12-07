@@ -130,6 +130,10 @@ h1, h2, h3 {
   .dropdown {
     display: none;
   }
+
+  .my-work-title {
+    padding-top: 5rem !important;
+  }
 }
 
 @media only screen and (max-width: 750px) {
