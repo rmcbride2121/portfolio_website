@@ -4,7 +4,8 @@
   <head>
     <meta name="viewport" content="width=device-width, minimum-scale=0.1">
     <title>Erin McBride | Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"/>
@@ -53,6 +54,7 @@
     <div class="my-work-title" id="my-work">
       <h1>My Work</h1>
     </div>
+    <h2>CSS & JavaScript</h2>
     <div class="row">
       <div class="card">
         <a href="https://critterapp.herokuapp.com/" target="_blank"><img src="images/react-running-app.png" alt="my work"  style="width:100%" class="card-img-top"></a>
@@ -97,8 +99,36 @@
           </div>
         </div>
     </div>
-      <!--  division projects section -->
-
+    
+    <h2>Logo Design</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="images/Chris' Pharmacy Logo.png" alt="First Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="images/Tarpon Discount Drugs Logo.png" alt="Second Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="images/York Care Pharmacy Logo.png" alt="Third Slide">
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!--  division projects section -->
     <div id="contact" class="page-footer font-small stylish-color-dark pt-4 mt-4">
 
         <div class="social-links">
@@ -114,9 +144,10 @@
     </div>
     <!--  division footer section -->
 
-    <script src="scripts/jquery-v3.3.1.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="scripts/helper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 
   </body>
 </html>

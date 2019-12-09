@@ -1,8 +1,9 @@
+// changes the background color of the navigation bar when scrolling past the banner image title
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 210) {
-	    $(".navbar").css("background" , "#666666");
+	    $(".navbar").css("background" , "#2374AB");
 	  } else if (scroll < 210) {
       $(".navbar").css("background" , "none");
     }
@@ -13,8 +14,7 @@ $(document).ready(function(){
   })
 })
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+// When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
