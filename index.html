@@ -19,7 +19,19 @@
             <a class="navbar-brand" href="#">Erin's Portfolio</a>
           </div>
           <ul class="nav navbar-nav">
-            <li><a href="#my-work" class="work-btn">My Work</a></li>
+            <!-- just added -->
+            <div class="dropdown-nav">
+              <button class="dropbtn-nav">My Work 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content-nav">
+                <a href="#web-dev" class="web-dev">Web Development</a>
+                <a href="#web-design" class="web-design">Web Design</a>
+                <a href="#photoshop-illustrator" class="photoshop-illustrator">Photoshop & Illustrator</a>
+              </div>
+            </div> 
+            <!-- just added -->
+            <!-- <li><a href="#my-work" class="work-btn">My Work</a></li> -->
             <li><a href="#contact" class="contact-btn">Contact</a></li>
             <li><a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a></li>
           </ul>
@@ -51,7 +63,7 @@
     <!--  division for navigation bar section -->
 
     <!-- Portfolio -->
-    <div class="my-work-title" id="my-work">
+    <div class="my-work-title" id="web-dev">
       <h1>My Work</h1>
     </div>
     <h2>Web Development</h2>
@@ -100,6 +112,10 @@
       </div>
     </div>
 
+    <div id="web-design"></div>
+    <br>
+    <br>
+    <br>
     <h2>Web Design</h2>
     <div class="row">
       <div class="card">
@@ -125,7 +141,7 @@
       </div>
     </div>
     
-    <h2>Photoshop & Illustrator</h2>
+    <h2 id="photoshop-illustrator">Photoshop & Illustrator</h2>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">

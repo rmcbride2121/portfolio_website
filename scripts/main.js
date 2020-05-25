@@ -22,7 +22,6 @@ function myFunction() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -54,15 +53,20 @@ $(".about-btn").click(function(){
   }, 1000);
 });
 
-$(".work-btn").click(function(){
+$(".web-dev").click(function(){
   $('html, body').animate({
-      scrollTop: $("#my-work").offset().top
+      scrollTop: $("#web-dev").offset().top
   }, 1000);
 });
 
-$(".skills-btn").click(function(){
+$(".web-design").click(function(){
   $('html, body').animate({
-      scrollTop: $("#skills").offset().top
+      scrollTop: $("#web-design").offset().top
+  }, 1000);
+});
+$(".photoshop-illustrator").click(function(){
+  $('html, body').animate({
+      scrollTop: $("#photoshop-illustrator").offset().top
   }, 1000);
 });
 
