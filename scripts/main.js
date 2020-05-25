@@ -14,6 +14,17 @@ $(document).ready(function(){
   })
 })
 
+// Sidenav Push Menu
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
 // When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -33,23 +44,18 @@ window.onclick = function(event) {
   }
 }
 
-// JQuery fade in
+// JQuery fade in hero text
 function main(){
   $('.hero-text').hide()
   $('.hero-text').fadeIn(2000)
 };
 
+// These create the animation when clicking navigation items
+
 // "See More" click event
 $(".btn").click(function(){
   $('html, body').animate({
       scrollTop: $("#my-work").offset().top
-  }, 1000);
-});
-
-// Menu button click events
-$(".about-btn").click(function(){
-  $('html, body').animate({
-      scrollTop: $("#about").offset().top
   }, 1000);
 });
 

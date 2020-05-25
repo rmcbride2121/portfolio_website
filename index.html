@@ -51,8 +51,9 @@
     </div>
     <!--  division for header section -->
 
+    <!-- Drop Down Menu (beling deleted) -->
     <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn" style='font-size:30px;'>&#9776;</button>
+    <button onclick="openNav()" class="dropbtn" style='font-size:30px;'>&#9776;</button>
       <div id="myDropdown" class="dropdown-content">
         <a href="#home" class="home-btn">Home</a>
         <a href="#my-work" class="work-btn">My Work</a>
@@ -60,14 +61,28 @@
         <a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a>
       </div>
     </div>
+    <!-- End of Drop Down Menu -->
+
+    <!-- Sidenav Push Menu -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- <a href="#my-work" class="work-btn">My Work</a> -->
+      <a href="#web-dev" class="web-dev">Web Development</a>
+      <a href="#web-design" class="web-design">Web Design</a>
+      <a href="#photoshop-illustrator" class="photoshop-illustrator">Photoshop & Illustrator</a>
+      <a href="#contact" class="contact-btn">Contact</a>
+      <a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a>
+    </div>
+    <!-- End of Sidenav Push Menu -->
+
     <!--  division for navigation bar section -->
 
     <!-- Portfolio -->
-    <div class="my-work-title" id="web-dev">
+    <div class="my-work-title" id="my-work">
       <h1>My Work</h1>
     </div>
-    <h2>Web Development</h2>
-    <div class="row">
+    <h2 id="web-dev" style="padding-top: 100px; margin-top: -100px;">Web Development</h2>
+    <div class="row" id="web-dev-section">
       <div class="card">
         <a href="https://critterapp.herokuapp.com/" target="_blank"><img src="images/react-running-app.png" alt="my work"  style="width:100%" class="card-img-top"></a>
         <div class="card-body">
@@ -112,11 +127,7 @@
       </div>
     </div>
 
-    <div id="web-design"></div>
-    <br>
-    <br>
-    <br>
-    <h2>Web Design</h2>
+    <h2 id="web-design" style="padding-top: 100px; margin-top: -100px;">Web Design</h2>
     <div class="row">
       <div class="card">
         <a href="https://www.goodpigproductions.com/" target="_blank"><img src="images/good-pig-productions.png" alt="my work" style="width:100%" class="card-img-top"></a>
