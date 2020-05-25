@@ -196,7 +196,7 @@ h2, h3 {
 /* Media Queries for Navigation Bar */
 
 @media only screen and (min-width: 750px) {
-  .dropdown {
+  .sideNavBtnContainer {
     display: none;
   }
 
