@@ -237,7 +237,7 @@ h2 {
 
 .row {
     margin: 2rem;
-    margin-bottom: 22rem;
+    margin-bottom: 10rem;
     padding: 0 1rem;
     display: grid;
     grid-gap: 2%;
@@ -254,6 +254,10 @@ h2 {
 .card img {
   min-height: 231px;
   max-height: 231px;
+}
+
+#web-design {
+  margin-top: 5rem;
 }
 
 /* Media Queries for Portfolio Section */
