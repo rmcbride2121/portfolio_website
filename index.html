@@ -12,190 +12,183 @@
   </head>
 
   <body>
-    <div class="hero-image">
-      <nav class="navbar navbar-default fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Erin's Portfolio</a>
+    <div id="main">
+      <div class="hero-image">
+        <nav class="navbar navbar-default fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Erin's Portfolio</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <!-- just added -->
+              <div class="dropdown-nav">
+                <button class="dropbtn-nav">My Work 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content-nav">
+                  <a href="#web-dev" class="web-dev">Web Development</a>
+                  <a href="#web-design" class="web-design">Web Design</a>
+                  <a href="#photoshop-illustrator" class="photoshop-illustrator">Photoshop & Illustrator</a>
+                </div>
+              </div> 
+              <!-- just added -->
+              <!-- <li><a href="#my-work" class="work-btn">My Work</a></li> -->
+              <li><a href="#contact" class="contact-btn">Contact</a></li>
+              <li><a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a></li>
+            </ul>
           </div>
-          <ul class="nav navbar-nav">
-            <!-- just added -->
-            <div class="dropdown-nav">
-              <button class="dropbtn-nav">My Work 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content-nav">
-                <a href="#web-dev" class="web-dev">Web Development</a>
-                <a href="#web-design" class="web-design">Web Design</a>
-                <a href="#photoshop-illustrator" class="photoshop-illustrator">Photoshop & Illustrator</a>
-              </div>
-            </div> 
-            <!-- just added -->
-            <!-- <li><a href="#my-work" class="work-btn">My Work</a></li> -->
-            <li><a href="#contact" class="contact-btn">Contact</a></li>
-            <li><a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="hero-text">
-        <h1>Erin McBride</h1>
-        <p>Web Designer & Developer</p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/erin.mcbride.14" target="_blank"><i class="fab fa-facebook fa-2x link"></i></a>
-          <a href="https://github.com/rmcbride2121" target="_blank"><i class="fab fa-github fa-2x link"></i></a>
-          <a href="https://www.linkedin.com/in/erin-mcbride/" target="_blank"><i class="fab fa-linkedin fa-2x link"></i></a>
-          <a href="mailto:raymonderin.mcbride@gmail.com"><i class="far fa-envelope fa-2x link"></i></a>
-        </div>
-      </div>
-      <a href="#my-work"><button class="btn"><i class="fas fa-chevron-circle-down fa-2x"></i></button></a>
-    </div>
-    <!--  division for header section -->
-
-    <!-- Drop Down Menu (beling deleted) -->
-    <div class="dropdown">
-    <button onclick="openNav()" class="dropbtn" style='font-size:30px;'>&#9776;</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#home" class="home-btn">Home</a>
-        <a href="#my-work" class="work-btn">My Work</a>
-        <a href="#contact" class="contact-btn">Contact</a>
-        <a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a>
-      </div>
-    </div>
-    <!-- End of Drop Down Menu -->
-
-    <!-- Sidenav Push Menu -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <!-- <a href="#my-work" class="work-btn">My Work</a> -->
-      <a href="#web-dev" class="web-dev">Web Development</a>
-      <a href="#web-design" class="web-design">Web Design</a>
-      <a href="#photoshop-illustrator" class="photoshop-illustrator">Photoshop & Illustrator</a>
-      <a href="#contact" class="contact-btn">Contact</a>
-      <a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a>
-    </div>
-    <!-- End of Sidenav Push Menu -->
-
-    <!--  division for navigation bar section -->
-
-    <!-- Portfolio -->
-    <div class="my-work-title" id="my-work">
-      <h1>My Work</h1>
-    </div>
-    <h2 id="web-dev" style="padding-top: 100px; margin-top: -100px;">Web Development</h2>
-    <div class="row" id="web-dev-section">
-      <div class="card">
-        <a href="https://critterapp.herokuapp.com/" target="_blank"><img src="images/react-running-app.png" alt="my work"  style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-          <h3>React Running App</h3>
-          <p>React (also referred to as React.js or ReactJS) is a JavaScript framework used for building user interfaces. I contributed to this running application with the help of my teammates for our final project at Austin Coding Academy.</p>
-        </div>
-      </div>
-      <div class="card">
-          <a href="https://rmcbride2121.github.io/interactive_photo_gallery/" target="_blank"><img src="images/interactive-photo-gallery-pic.jpg" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-          <h3>Interactive Photo Gallery</h3>
-          <p>Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications. I used HTML, CSS and the popular programming language JavaScript to create an interactive, searchable gallery of photos.</p>
-        </div>
-      </div>
-      <div class="card">
-        <a href="https://rmcbride2121.github.io/video_player/" target="_blank"><img src="images/video-player-pic.jpg" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-          <h3>Video Player</h3>
-          <p>I built an HTML5 video player using JavaScript and the HTML5 Video API. Video, and the interface used to control the video, is increasingly important for many different kinds of web applications, including web site landing pages, blogs, podcasts, product marketing and training.</p>
-        </div>
-      </div>
-      <div class="card">
-        <a href="https://www.bridgewaysoberliving.com/" target="_blank"><img src="images/sober-living.png" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-            <h3>CSS Customization</h3>
-            <p>For this client, they reached out to me to add custom CSS to their existing website on Wordpress. They requested a side navigation menu on mobile, so I installed a plugin on their site and added custom CSS to meet their specific needs.</p>
-        </div>
-      </div>
-      <div class="card">
-        <a href="https://rmcbride2121.github.io/web_style_guide/" target="_blank"><img src="images/web-style-guide-pic.png" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-          <h3>Web Style Guide</h3>
-          <p>Sass is an important tool in a modern Front End Web Developer’s toolbox. It's used by many developers to make styling web pages with CSS easier and faster. I created this style guide using BEM style classes to quickly prototype and apply a consistent look across multiple pages of a site.</p>
-        </div>
-      </div>
-      <div class="card">
-          <a href="https://rmcbride2121.github.io/online_registration_form/" target="_blank"><img src="images/online-registration-form-pic.jpg" alt="my work"  style="width:100%" class="card-img-top"></a>
-          <div class="card-body">
-            <h3>Registration Form</h3>
-            <p>Web forms appear everywhere online: forms allow users to order books, sign up for web sites, and post to Facebook. This project challenged me to build a responsive, mobile-first registration form using a variety of HTML form elements.</p>
-          </div>
-      </div>
-    </div>
-
-    <h2 id="web-design" style="padding-top: 100px; margin-top: -100px;">Web Design</h2>
-    <div class="row">
-      <div class="card">
-        <a href="https://www.goodpigproductions.com/" target="_blank"><img src="images/good-pig-productions.png" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-            <h3>Wordpress</h3>
-            <p>This is a website I built in Wordpress for my Mother's business. She is an artist and recently wanted to start running local art shows, so she needed this website built to let artists get in contact with her.</p>
-        </div>
-      </div>
-      <div class="card">
-        <a href="https://www.moralescleaningva.com/" target="_blank"><img src="images/morales-cleaning.png" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-            <h3>GoDaddy</h3>
-            <p>This is a one page website I built for a house cleaning company in Northern Virginia.They needed something cheap and simple, so I built this for them using GoDaddy's free website building platform that was included on their plan when they bought their domain.</p>
-        </div>
-      </div>
-      <div class="card">
-        <a href="https://www.auburn-pharmacy.com/" target="_blank"><img src="images/auburn-pharmacy.png" alt="my work" style="width:100%" class="card-img-top"></a>
-        <div class="card-body">
-            <h3>SpaceCraft</h3>
-            <p>As a part of the website build team at Digital Pharmacist, we build websites for independent pharmacies. Here is an example of my work.</p>
-        </div>
-      </div>
-    </div>
-    
-    <h2 id="photoshop-illustrator">Photoshop & Illustrator</h2>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="img-fluid" src="images/Chris' Pharmacy Logo.png" alt="First Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="img-fluid" src="images/Tarpon Discount Drugs Logo.png" alt="Second Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="img-fluid" src="images/York Care Pharmacy Logo.png" alt="Third Slide">
-            </div>
-            <div class="carousel-item">
-              <img class="img-fluid" src="images/Hazienda Pharmacy.png" alt="Third Slide">
-            </div>
-        </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    <!--  division projects section -->
-    <div id="contact" class="page-footer font-small stylish-color-dark pt-4 mt-4">
-
-        <div class="social-links">
+        </nav>
+        <div class="hero-text">
+          <h1>Erin McBride</h1>
+          <p>Web Designer & Developer</p>
+          <div class="social-links">
             <a href="https://www.facebook.com/erin.mcbride.14" target="_blank"><i class="fab fa-facebook fa-2x link"></i></a>
             <a href="https://github.com/rmcbride2121" target="_blank"><i class="fab fa-github fa-2x link"></i></a>
             <a href="https://www.linkedin.com/in/erin-mcbride/" target="_blank"><i class="fab fa-linkedin fa-2x link"></i></a>
             <a href="mailto:raymonderin.mcbride@gmail.com"><i class="far fa-envelope fa-2x link"></i></a>
+          </div>
         </div>
+        <a href="#my-work"><button class="btn"><i class="fas fa-chevron-circle-down fa-2x"></i></button></a>
+      </div>
+      <!--  division for header section -->
 
-        <div class="copyright">
-          <h6><strong>&copy; 2020 Erin McBride</strong></h6>
+      <!-- Sidenav Button -->
+      <div class="sideNavBtnContainer">
+      <button onclick="openNav()" class="sideNavBtn" style='font-size:30px;'>&#9776;</button>
+      </div>
+
+      <!-- Sidenav Push Menu -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <a href="#my-work" class="work-btn">My Work</a> -->
+        <a href="#web-dev" class="web-dev">Web Development</a>
+        <a href="#web-design" class="web-design">Web Design</a>
+        <a href="#photoshop-illustrator" class="photoshop-illustrator">Photoshop & Illustrator</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+        <a href="https://medium.com/@rmcbride2121" target="_blank" class="contact-btn">Read My Blog</a>
+      </div>
+      <!--  division for navigation bar section -->
+
+      <!-- Portfolio -->
+      <div class="my-work-title" id="my-work">
+        <h1>My Work</h1>
+      </div>
+      <h2 id="web-dev" style="padding-top: 100px; margin-top: -100px;">Web Development</h2>
+      <div class="row" id="web-dev-section">
+        <div class="card">
+          <a href="https://critterapp.herokuapp.com/" target="_blank"><img src="images/react-running-app.png" alt="my work"  style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+            <h3>React Running App</h3>
+            <p>React (also referred to as React.js or ReactJS) is a JavaScript framework used for building user interfaces. I contributed to this running application with the help of my teammates for our final project at Austin Coding Academy.</p>
+          </div>
         </div>
+        <div class="card">
+            <a href="https://rmcbride2121.github.io/interactive_photo_gallery/" target="_blank"><img src="images/interactive-photo-gallery-pic.jpg" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+            <h3>Interactive Photo Gallery</h3>
+            <p>Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications. I used HTML, CSS and the popular programming language JavaScript to create an interactive, searchable gallery of photos.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://rmcbride2121.github.io/video_player/" target="_blank"><img src="images/video-player-pic.jpg" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+            <h3>Video Player</h3>
+            <p>I built an HTML5 video player using JavaScript and the HTML5 Video API. Video, and the interface used to control the video, is increasingly important for many different kinds of web applications, including web site landing pages, blogs, podcasts, product marketing and training.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://www.bridgewaysoberliving.com/" target="_blank"><img src="images/sober-living.png" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+              <h3>CSS Customization</h3>
+              <p>For this client, they reached out to me to add custom CSS to their existing website on Wordpress. They requested a side navigation menu on mobile, so I installed a plugin on their site and added custom CSS to meet their specific needs.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://rmcbride2121.github.io/web_style_guide/" target="_blank"><img src="images/web-style-guide-pic.png" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+            <h3>Web Style Guide</h3>
+            <p>Sass is an important tool in a modern Front End Web Developer’s toolbox. It's used by many developers to make styling web pages with CSS easier and faster. I created this style guide using BEM style classes to quickly prototype and apply a consistent look across multiple pages of a site.</p>
+          </div>
+        </div>
+        <div class="card">
+            <a href="https://rmcbride2121.github.io/online_registration_form/" target="_blank"><img src="images/online-registration-form-pic.jpg" alt="my work"  style="width:100%" class="card-img-top"></a>
+            <div class="card-body">
+              <h3>Registration Form</h3>
+              <p>Web forms appear everywhere online: forms allow users to order books, sign up for web sites, and post to Facebook. This project challenged me to build a responsive, mobile-first registration form using a variety of HTML form elements.</p>
+            </div>
+        </div>
+      </div>
+
+      <h2 id="web-design" style="padding-top: 100px; margin-top: -100px;">Web Design</h2>
+      <div class="row">
+        <div class="card">
+          <a href="https://www.goodpigproductions.com/" target="_blank"><img src="images/good-pig-productions.png" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+              <h3>Wordpress</h3>
+              <p>This is a website I built in Wordpress for my Mother's business. She is an artist and recently wanted to start running local art shows, so she needed this website built to let artists get in contact with her.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://www.moralescleaningva.com/" target="_blank"><img src="images/morales-cleaning.png" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+              <h3>GoDaddy</h3>
+              <p>This is a one page website I built for a house cleaning company in Northern Virginia.They needed something cheap and simple, so I built this for them using GoDaddy's free website building platform that was included on their plan when they bought their domain.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://www.auburn-pharmacy.com/" target="_blank"><img src="images/auburn-pharmacy.png" alt="my work" style="width:100%" class="card-img-top"></a>
+          <div class="card-body">
+              <h3>SpaceCraft</h3>
+              <p>As a part of the website build team at Digital Pharmacist, we build websites for independent pharmacies. Here is an example of my work.</p>
+          </div>
+        </div>
+      </div>
+      
+      <h2 id="photoshop-illustrator">Photoshop & Illustrator</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="img-fluid" src="images/Chris' Pharmacy Logo.png" alt="First Slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="img-fluid" src="images/Tarpon Discount Drugs Logo.png" alt="Second Slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="img-fluid" src="images/York Care Pharmacy Logo.png" alt="Third Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/Hazienda Pharmacy.png" alt="Third Slide">
+              </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+      <!--  division projects section -->
+      <div id="contact" class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+          <div class="social-links">
+              <a href="https://www.facebook.com/erin.mcbride.14" target="_blank"><i class="fab fa-facebook fa-2x link"></i></a>
+              <a href="https://github.com/rmcbride2121" target="_blank"><i class="fab fa-github fa-2x link"></i></a>
+              <a href="https://www.linkedin.com/in/erin-mcbride/" target="_blank"><i class="fab fa-linkedin fa-2x link"></i></a>
+              <a href="mailto:raymonderin.mcbride@gmail.com"><i class="far fa-envelope fa-2x link"></i></a>
+          </div>
+
+          <div class="copyright">
+            <h6><strong>&copy; 2020 Erin McBride</strong></h6>
+          </div>
+      </div>
     </div>
     <!--  division footer section -->
 

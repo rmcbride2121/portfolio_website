@@ -1,48 +1,36 @@
 // changes the background color of the navigation bar when scrolling past the banner image title
 $(document).ready(function(){
   $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
+  	let scroll = $(window).scrollTop();
 	  if (scroll > 210) {
 	    $(".navbar").css("background" , "#2374AB");
 	  } else if (scroll < 210) {
       $(".navbar").css("background" , "none");
     }
-
-	  // else{
-		//   $(".navbar").css("background" , "#333");  	
-	  // }
   })
 })
 
 // Sidenav Push Menu
+// Open Sidenav
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
-
+// Close Sidenav
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
 
-// When the user clicks on the button, toggle between hiding and showing the dropdown content 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+// Close the Sidenav if the user clicks outside of it
+const $mySidenav = $('#mySidenav');
+$(document).mouseup(e => {
+  if (!$mySidenav.is(e.target) // if the target of the click isn't the container...
+  && $mySidenav.has(e.target).length === 0) // ... nor a descendant of the container
+  {
+    closeNav();
+ }
+});
 
 // JQuery fade in hero text
 function main(){
